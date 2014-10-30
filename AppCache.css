@@ -1,0 +1,190 @@
+
+#contact-form input[type="text"],
+
+#contact-form input[type="email"],
+
+#contact-form input[type="tel"],
+
+#contact-form input[type="url"],
+
+#contact-form textarea {
+
+  width: 70%;
+
+  /*    box-shadow:inset 0 1px 2px pink, 0 1px 0 purple;*/
+
+  -webkit-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+
+  -moz-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+
+  border: 1px solid #CCC;
+
+  background: #FFF;
+
+  margin-left: 10%;
+
+  padding: 15px;
+
+  border-radius: 5px;
+
+  margin-top: 1em;
+
+  margin-bottom: 0.3em;
+
+  text-align:
+
+}
+
+#contact-form button[type="submit"] {
+
+  cursor: pointer;
+
+  width: 50%;
+
+  border: none;
+
+  /*    background:silver;*/
+
+  background-image: linear-gradient(bottom, #8C1C50 0%, SteelBlue 52%);
+
+  background-image: -moz-linear-gradient(bottom, #8C1C50 0%, SteelBlue 52%);
+
+  background-image: -webkit-linear-gradient(bottom, SteelBlue 0%, silver 52%);
+
+  color: #FFF;
+
+  margin-left: 20%;
+
+  padding: 20px;
+
+  border-radius: 5px;
+
+}
+
+::-webkit-input-placeholder {
+
+  color: #888;
+
+}
+
+:-moz-placeholder {
+
+  color: #888;
+
+}
+
+::-moz-placeholder {
+
+  color: #888;
+
+}
+
+:-ms-input-placeholder {
+
+  color: #888;
+
+}
+
+label {
+
+  font-family: "Dawning of a New Day";
+
+  color: SteelBlue;
+
+  text-align: center;
+
+  pading: 2em;
+
+  font-size: 24px;
+
+}
+
+.form {
+
+  width: 50%;
+
+  margin-top: 2em;
+
+  margin-bottom: 30px;
+
+  background-color: silver;
+
+  padding: 1.1em;
+  
+  float:left;
+
+}
+
+header {
+
+  background-color: steelblue;
+
+  padding: 0.3em;
+
+}
+
+h1 {
+
+  text-align: center;
+
+  color: white;
+
+}
+
+h3 {
+
+  text-align: center;
+
+  font-family: "Helvetica";
+
+  color: SteelBlue;
+
+  width: 100%;
+
+}
+
+h4 {
+
+  text-align: center;
+
+  font-family: "Helvetica";
+
+  color: grey;
+
+  width: 100%;
+
+}
+
+.cntct {
+
+  font-family: "verdana";
+
+  align-content: center;
+
+  padding: 0.5em;
+
+  color: steelblue;
+
+}
+
+.text {
+
+  text-align: center;
+
+  width: 50%;
+
+}
+
+.buttons {
+  align-content: center;
+}
+
+.upload {
+  margin-top:2em;
+  margin-right:7%;
+  float:right;
+  height:400px;
+  width:400px;
+  background-color: silver;
+}
+/* image upload/localstorage*/

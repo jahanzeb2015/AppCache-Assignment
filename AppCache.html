@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="AppCache.css">
+  <script src="final.js"></script>
+  <title>AppCache, Storage, Meta Data</title>
+</head>
+
+<body>
+  <header>
+    <h1>Where Are You Stuck?</h1>
+  </header>
+  <div class="maincontent">
+    <div class="form">
+      <form id="contact-form" action="/" method="post">
+        <h3>Who are you?</h3>
+        <h4>Be as specific as possible!</h4>
+        <div>
+
+          <div class="inside">
+            <div class="text">
+              <span class="cntct">Name: (required)</span>
+            </div>
+            <input id="name" placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+
+          </div>
+
+          <div>
+            <div class="text">
+              <span class="cntct">Email: (required)</span>
+            </div>
+            <input id="email" placeholder="Please enter your email address" type="email" tabindex="2" required>
+
+          </div>
+          <div>
+            <div class="text">
+              <span class="cntct">Class: (required)</span>
+            </div>
+            <input id="class" placeholder="Please enter your class name" type="tel" tabindex="3" required>
+
+          </div>
+          <!--
+        <div>
+              
+                        <span class="cntct">Website: (required)</span>
+                        <input placeholder="Begin with http://" type="url" tabindex="4" required>
+               
+        </div>
+-->
+          <div>
+            <div class="text">
+              <span class="cntct">Phone: (required)</span>
+            </div>
+            <input id="number" placeholder="Please enter your number" type="tel" tabindex="3" required>
+
+          </div>
+
+          <div class="buttons">
+            <button name="submit" type="submit" id="contact-submit">Send Information</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <section class="upload">
+
+    </section>
+
+    <div class="form">
+      <form id="contact-form" action="/" method="post">
+        <h3>What's the issue?</h3>
+        <h4>Fill in the form below, and I'll get back to you.</h4>
+        <div>
+
+          <div class="inside">
+            <div class="text">
+              <span class="cntct">Chapter:</span>
+            </div>
+            <input id="chapter" placeholder="Please enter the chapter you are having troubles with" type="text" tabindex="1" required autofocus>
+
+          </div>
+
+          <div>
+            <div class="text">
+              <span class="cntct">Heading:</span>
+            </div>
+            <input id="heading" placeholder="Please enter the section heading" type="email" tabindex="2" required>
+
+          </div>
+          <div>
+            <div class="text">
+              <span class="cntct">Issue:</span>
+            </div>
+            <input id="issue" placeholder="What are you having trouble with?" type="tel" tabindex="3" required>
+
+          </div>
+          <!--
+        <div>
+              
+                        <span class="cntct">Website: (required)</span>
+                        <input placeholder="Begin with http://" type="url" tabindex="4" required>
+               
+        </div>
+-->
+          <div>
+            <div class="text">
+              <span class="cntct">Goal:</span>
+            </div>
+            <textarea id="goal" placeholder="Include all the details you can" tabindex="5" required></textarea>
+
+          </div>
+
+          <div class="buttons">
+            <button name="submit" type="submit" id="contact-submit">Send Information</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+  <script>
+    (function () {
+
+      // Create input element for testing
+      var input = document.createElement('input');
+
+      // Create the supports object
+      var supports = {};
+
+      supports.autofocus = 'autofocus' in input;
+      supports.required = 'required' in input;
+      supports.placeholder = 'placeholder' in input;
+
+      // Fallback for autofocus attribute
+      if (!supports.autofocus) {
+
+      }
+
+      // Fallback for required attribute
+      if (!supports.required) {
+
+      }
+
+      // Fallback for placeholder attribute
+      if (!supports.placeholder) {
+
+      }
+
+      // Change text inside send button on submit
+      var send = document.getElementById('contact-submit');
+      if (send) {
+        send.onclick = function () {
+          this.innerHTML = '...Sending';
+        }
+      }
+
+    })();
+  </script>
+
+</body>
+
+</html>
