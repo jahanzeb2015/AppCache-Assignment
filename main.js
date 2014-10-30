@@ -1,8 +1,14 @@
-
+if (Modernizr.localstorage) {
+  // window.localStorage is available!
+} else {
+  // no native support for HTML5 storage :(
+  // maybe try dojox.storage or a third-party solution
+}
 
 
 $('#name').blur(function(){
-  localstorage.setItem('name', this.value())
+  console.log("it works");
+  localstorage.setItem("name", this.value())
 });
 
 
